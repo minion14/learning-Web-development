@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(208, 228, 208);
+}
+
+h1{
+   color:#7cc498; 
+   border-color: rgb(4, 31, 4);
+   border-width: 1px;
+   border-style: solid;
+}
+li{
+    color:rgba(80, 100, 070, 10);
+    border: 1px solid rgb(87, 214, 172);
+}

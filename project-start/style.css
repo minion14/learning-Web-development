@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+@media only screen and (max-width: 600px) {
+    .main-nav{
+        font-size: .1em;
+        padding: 0;
+    }
+    
+}
+.main-nav{
+    display: flex;
+    list-style-type: none;
+    font-size: .7em;
+    margin: 0; 
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(72, 171, 189, 0.5)!important;  
+}
+li{
+    padding: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.push{
+    margin-left: auto;
+}
+.cover{
+    max-width: 20rem;
+}
+
+/* cover propoerties */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding:10px;
+}
+/* grid */
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+.box{
+    margin: 10px;
+    padding: 80px;
+    background-color:rgba(167, 173, 179, 0.5);
+}
+.box>img{
+    max-width: 100%;
+}
+footer{
+    text-align: center;
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.yellow{
+    font-size: 5rem;
+    background:rgba(72, 171, 189, 0.5)!important;
+}
+
+

@@ -1,0 +1,126 @@
+h1{
+    text-align: center;
+}
+.robotBody{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.head{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color:aqua;
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    /* transition: all 1s; */
+}
+.head:hover{
+    width: 200px;
+    transition: 1s ease-in-out;
+}
+
+.eyes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.eyeRight, .eyeLeft{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: rgb(254, 255, 254);
+    margin: 60px 20px 40px 20px;
+}
+.upperHalf{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+    height: 200px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+}
+.rightHand{
+    width: 30px;
+    height: 120px;
+    background-color: aqua;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: transform 2s linear;
+    transform-origin: top right;
+    transform-style: preserve-3d;
+}
+.rightHand:hover{
+    transform: rotate(150deg);
+}
+.tummy{
+    width: 150px;
+    height: 200px;
+    background-color: aqua;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+/* below css is for tummy to shaken a bit  */
+.tummy:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+.leftHand{
+    width: 30px;
+    height: 120px;
+    background-color: aqua;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: transform 2s linear;
+    transform-origin: top left;
+    transform-style: preserve-3d;
+}
+.leftHand:hover{
+    transform: rotate(-150deg);
+}
+.legs{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.leftLeg,.rightLeg{
+    height: 100px;
+    width: 30px;
+    background-color: aqua;
+    margin:-20px 15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+}
+.leftLeg:hover{
+    transform:rotate(-20deg);
+}
+
+.rightLeg:hover{
+    transform: rotate(20deg);
+}
